@@ -9,7 +9,7 @@ Working Area에서 파일을 수정
 ### git
 - git 설치
 ```
-# yum -y install git
+$ yum -y install git
 ```
 - git 초기화
 ```
@@ -29,7 +29,7 @@ $ git status
 
 # 스테이징 영역의 파일을 삭제하는 방법
 # 방법 1)
-$ git reset file2 = $ git rm -cached file2
+$ git reset file2 = $ git rm --cached file2
 
 # 방법2) .gitignore 사용
 $ vi .gitignore
@@ -46,4 +46,23 @@ $ vi .gitignore
 - Staging Area에 있는 변경 사항 커밋
 ```
 $ git commit -m "add first two file"
+```
+### 브랜치 생성
+```
+$ git branch 1.1-testing
+
+# 목록 확인
+$ git branch --list
+= $ git branch
+
+# branch 를 main에서 1.1-testing으로 변경
+$ git checkout 1.1-testing
+```
+### git log 확인
+```
+$ git log --raw
+```
+### git merge
+```
+$ git merge 1.1-testing
 ```
