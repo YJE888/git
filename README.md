@@ -66,3 +66,14 @@ $ git log --raw
 ```
 $ git merge 1.1-testing
 ```
+### git remote -v
+- 연결된 원격 저장소 확인
+  
+### git pull
+```
+# 내가 main.py 파일 수정 후 원격 저장소로 push
+$ git push -u github master
+
+# mark가 변경된 main.py만 가져오기
+$ git pull
+```
